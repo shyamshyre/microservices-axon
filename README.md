@@ -1,5 +1,15 @@
 # microservices-axon
 
+What we See 
+
+### SetBased Consistency Validation : In simple words when you have decoupled your architecture using CQRS design pattern.
+#### The major problem we see is StateValidation, As the data gets persisted first on the ReadDatabase and then the communication happens 
+through Eventbus which can lead to Inconsistent State, Validating the aggregated state is even a time consuming process.
+To avoid this problem better to implement Lookup Commmand Database at the command side.
+
+
+
+
 Command Handler - Post Requests
 
 POST: http://localhost:9090/products-service/products
