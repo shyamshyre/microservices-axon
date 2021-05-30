@@ -1,5 +1,6 @@
-package com.devhat.estore.ProductsService.aggregate;
+package com.devhat.estore.ProductsService.eventhandler.query.handler;
 
+import org.axonframework.config.ProcessingGroup;
 import org.axonframework.eventhandling.EventHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,6 +18,7 @@ import com.devhat.estore.ProductsService.repository.ProductsRepository;
  */
 
 @Component
+@ProcessingGroup("product-group")
 public class ProductsEventsHandler {
 	private static final Logger LOGGER = LoggerFactory.getLogger(ProductsEventsHandler.class);
 	private final ProductsRepository  productsRepository;
