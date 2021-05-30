@@ -10,6 +10,10 @@ a time consuming process.
 To avoid this problem better to implement Lookup Commmand Database at the command side which helps in effective lookup Reads.
 This really solves the major problem of SetBasedConsistency Validaton.
 
+Lookup doesnt need to contain the complete record set information which exists on Query/Read Database.
+You can have properties like transaction id, orderid, product id etc.. To validate the Record.
+Storing the complete information leads to redundancy.
+
 
 
 
