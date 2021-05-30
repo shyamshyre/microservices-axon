@@ -50,7 +50,7 @@ public class ProductAggregate {
 	@CommandHandler
 	public ProductAggregate(CreateProductCommand createProductCommand) {
 		LOGGER.info("Indide the ProductAggregate CommandHadler");
-		//Validate CreateProductCommand
+		//Command validation - Validate CreateProductCommand
 		if(createProductCommand.getPrice().compareTo(BigDecimal.ZERO) <=0) {
 			throw new IllegalArgumentException("Price cannot be less than zero");
 		}
