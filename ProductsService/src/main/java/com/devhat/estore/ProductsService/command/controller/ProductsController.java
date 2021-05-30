@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.devhat.estore.ProductsService.controller;
+package com.devhat.estore.ProductsService.command.controller;
 
 import java.util.UUID;
 

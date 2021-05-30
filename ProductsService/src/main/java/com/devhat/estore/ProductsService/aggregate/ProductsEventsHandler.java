@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 import com.devhat.estore.ProductsService.core.events.ProductCreatedEvent;
 import com.devhat.estore.ProductsService.entity.ProductEntity;
-import com.devhat.estore.ProductsService.repsoitory.ProductsRepository;
+import com.devhat.estore.ProductsService.repository.ProductsRepository;
 
 /**
  * This class is aloso called as ProjectionClass 

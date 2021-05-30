@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.devhat.estore.ProductsService.repsoitory;
+package com.devhat.estore.ProductsService.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
