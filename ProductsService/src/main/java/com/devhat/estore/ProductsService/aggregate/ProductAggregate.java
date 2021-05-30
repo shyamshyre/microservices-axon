@@ -51,12 +51,7 @@ public class ProductAggregate {
 	public ProductAggregate(CreateProductCommand createProductCommand) {
 		LOGGER.info("Indide the ProductAggregate CommandHadler");
 		//Command validation - Validate CreateProductCommand
-		if(createProductCommand.getPrice().compareTo(BigDecimal.ZERO) <=0) {
-			throw new IllegalArgumentException("Price cannot be less than zero");
-		}
-		if(createProductCommand.getTitle().isBlank()) {
-			throw new IllegalArgumentException("Title cannot Empty");
-		}
+		
 		ProductCreatedEvent productCreatedEvent = new ProductCreatedEvent();
 //		This will copy all the properties till they match
 		BeanUtils.copyProperties(createProductCommand, productCreatedEvent);
