@@ -1,4 +1,5 @@
 # How to Handle Distributed Transaction effectively using DomainDrivenModel ,EventDrivenArchitecture applying CQRS & SAGA Design Patterns.
+when you are working on large scale applications that are distributed across multiple nodes and how effectively we attain communication across these.
 
 What we See 
 
