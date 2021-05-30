@@ -5,6 +5,8 @@ package com.devhat.estore.ProductsService.command.controller;
 
 import java.util.UUID;
 
+import javax.validation.Valid;
+
 import org.axonframework.commandhandling.gateway.CommandGateway;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -37,7 +39,7 @@ public class ProductsController {
 	}
 	
 	@PostMapping
-	public String createProduct(@RequestBody CreateProductRestModel createProductRestModel) {
+	public String createProduct(@Valid @RequestBody CreateProductRestModel createProductRestModel) {
 		
 		CreateProductCommand createProductCommand = CreateProductCommand.builder().price(createProductRestModel.getPrice())
 		.quantity(createProductRestModel.getQuantity())
